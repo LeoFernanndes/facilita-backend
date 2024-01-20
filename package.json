@@ -1,0 +1,26 @@
+{
+  "name": "facilita-backend",
+  "version": "1.0.0",
+  "description": "Backend server for routes api ",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npx tsc --watch\" \"tsc-alias -w\" \"nodemon -q dist/index.js\"",
+    "build": "tsc && tsc-alias"
+  },
+  "author": "LeoFernanndes",
+  "license": "ISC",
+  "dependencies": {
+    "class-validator": "^0.14.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.5",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.8"
+  }
+}
